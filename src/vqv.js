@@ -16,6 +16,15 @@
       #VQV!'
 */
 
-const vqv = () => {};
+const vqv = (name, idade) => { // funçao recebe dois parametros name e idade;
+  if (!name || !idade) {
+    return undefined; // funcao verifica se recebe um parametro vazio, caso receba retorna undefined
+  }
+  // usando template literals, consigo 'concartenar' string com numeros e retornar o resultado esperado.
+  return `Oi, meu nome é ${name}!
+Tenho ${idade} anos,
+trabalho na Trybe e mando muito em programação!
+#VQV!`;
+};
 
 module.exports = vqv;
