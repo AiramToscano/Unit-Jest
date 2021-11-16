@@ -13,7 +13,7 @@ const numbers = require('../src/numbers');
     - numbers([2, 'errado', 5]); // Retorna: false
 
 */
-
+// documentação estudada em https://jestjs.io/pt-BR/docs/using-matchers
 describe('2 - Implemente os casos de teste para a função `numbers`', () => {
   it('Verifica se a função `numbers`retorna `true` quando o array contém apenas numeros e falso caso contrário', () => {
        expect(numbers([1, 2, 3, 4, 5])).toBeTruthy();
