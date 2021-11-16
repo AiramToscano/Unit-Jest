@@ -14,13 +14,15 @@
     estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
-
+// função desenvolvida no trabalho test desenvolvido pelo professor rod da turma 13
 const createStudent = (student) => {
-  return {
+  const estudante = {
     name: student,
     feedback: () => 'Eita pessoa boa!',
-  
-};
+
+  };
+
+  return estudante;
 };
 
 module.exports = createStudent;
