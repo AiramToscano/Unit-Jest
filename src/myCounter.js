@@ -15,13 +15,15 @@
   Comportamento:
   myCounter() // Retorna: [0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 3];
 */
-
+// trocando o var pelo let, e adicionando outra variavel counter1, a função funciona.
+// funcionamento dessa função é, 0 adiciona 2 e 3 , 2 adicona 2 e 3 , 3 adciona 2 e 3
+// no final, meu array vai ser [0,2,3,1,2,3,2,2,3,3,2,3];
 const myCounter = () => {
   var myArray = [];
-  for (var counter = 0; counter <= 3; counter += 1) {
+  for (let counter = 0; counter <= 3; counter += 1) {
     myArray.push(counter);
-    for (var counter = 2; counter <= 3; counter += 1) {
-      myArray.push(counter);
+    for (let counter1 = 2; counter1 <= 3; counter1 += 1) {
+      myArray.push(counter1);
     }
   }
   return myArray;
